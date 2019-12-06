@@ -9,7 +9,7 @@ server.use(helmet());
 server.use(express.json());
 
 server.get('/', (req, res) => {
-  const message = process.env.MSG || 'Hellow world!';
+  const message = process.env.MSG || 'Hello world!';
 
   Shoutouts.find()
   .then(shoutouts => {
